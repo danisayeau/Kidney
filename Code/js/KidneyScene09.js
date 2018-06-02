@@ -89,7 +89,7 @@
         displacementMap.load('Code/Assets/RKDisplace.jpg', function (displace){                 
         bumpMap.load('Code/Assets/RKBump.jpg', function (norm){   
         //load the given .obj file from the 'high' or 'low' folder based on user's graphics quality preference
-        objLoader.load('blob/master/Code/Assets/RKLP.OBJ', function (object) {
+        objLoader.load('https://github.com/danisayeau/Kidney/blob/master/Code/Assets/RKLP.obj', function (object) {
         //objLoader by default loads .obj files in as bufferGeometry (not straight geometry)
                object.traverse(function (child) { //traverse iterates contained function over all children of object
                 var mat = new THREE.MeshPhysicalMaterial({
